@@ -65,6 +65,7 @@
         $conn = db_connect();
 
         // $sql = "SELECT * , DATE_FORMAT(date_posted, '%M %d %Y') AS date_posted FROM posts INNER JOIN categories ON categories.category_id = posts.category_id INNER JOIN users ON users.user_id = posts.user_id WHERE post_id = '$post_id'";
+        
         $sql = "SELECT * FROM posts INNER JOIN categories ON categories.category_id = posts.category_id INNER JOIN users ON users.user_id = posts.user_id WHERE post_id = '$post_id'";
 
         $result = $conn->query($sql);

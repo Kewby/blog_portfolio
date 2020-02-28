@@ -85,6 +85,15 @@
                 ?>
             </tbody>
         </table>
+
+        <?php
+            if($_GET['actiontype']=='delete'){
+                $category_id = $_GET['id'];
+
+                echo "Hi";
+                // deleteCategory($category_id);
+            }
+        ?>
     </div>
 </body>
 
