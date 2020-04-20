@@ -1,3 +1,4 @@
+//HELLO FROM THE ECOMMERCE BRANCH
 <?php
     include 'functions/userFunctions.php';
 ?>
