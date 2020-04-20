@@ -16,6 +16,7 @@
                         <td>".$row['category_name']."</td>
                         <td><a href='updateCategory.php?id=".$row['category_id']."' class='btn btn-sm btn-warning text-white'>Update</a></td>
                         <td><a href='deleteCategory.php?id=".$row['category_id']."' class='btn btn-sm btn-danger text-white'>Delete</a></td>
+                        <td><a href='categoriesPage.php?actiontype=delete&id=".$row['category_id']."' class='btn btn-sm btn-danger text-white'>Test</a></td>
                     </tr>
                 ";
             }
@@ -44,5 +45,11 @@
                 </div>";
         }
     }
+
+    function deleteCategory(){
+
+    }
+
+    
 
 ?>

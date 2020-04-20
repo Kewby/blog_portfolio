@@ -1,5 +1,6 @@
 <?php
     include 'functions/postFunctions.php';
+    
     $post_id = $_GET['post_id'];
 
     if(empty($post_id)){
@@ -47,29 +48,16 @@
 </head>
 
 <body>
-<div class="navbar">
+    <div class="navbar">
         <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a href="postsPage.php" class="nav-link text-secondary" style="opacity: 1;"><i class="fas fa-chevron-left fa-2x"></i></a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a href="post.php" class="nav-link">Posts</a>
-                </li>
-                <li class="nav-item">
-                    <a href="category.php" class="nav-link">Categories</a>
-                </li>
-                <li>
-                    <a href="user.php" class="nav-link">Users</a>
-                </li> -->
             </ul>
-            <ul class="navbar-nav float-right">
-                <!-- <li class="nav-item">
-                    <a href="profile.php" class="nav-link text-primary"><i class="fas fa-user"></i> Profile</a>
-                </li> -->
+            <ul class="navbar-nav justify-content-end">
                 <li class="nav-item">
                     <a href="updatePost.php?post_id=<?php echo $post_id?>" class="nav-link text-info" style="opacity: 1;"><i class="fas fa-pen fa-2x"></i>
-                        <!-- <span style='font-size: 25px;'> Edit Post</span> -->
                     </a>
                 </li>
             </ul>

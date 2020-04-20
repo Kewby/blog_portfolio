@@ -1,5 +1,7 @@
 <?php
     //Hello I am from the Kirby branch
+    //HELLO FROM THE MASTER BRANCH
+    include "functions/dashboardFunctions.php";
     session_start();
 
     if(empty($_SESSION['status']=='A')){
@@ -52,7 +54,7 @@
             </li>
         </ul>
     </nav>
-    <div class="container-fluid bg-secondary text-white" style="margin-top:50px;">
+    <div class="container-fluid bg-danger text-white" style="margin-top:50px;">
         <h2 class="display-1"><i class="fas fa-user-cog"></i> Dashboard</h2>
     </div>
     <div class="container mx-auto mt-5 my-5">
@@ -133,18 +135,18 @@
             <div class="col-md-4">
                 <div class="container bg-primary rounded text-center text-white p-3 mt-4">
                     <h2>Posts</h2>
-                    <h3><i class="fas fa-pencil-alt"></i> 7</h3>
+                    <h3><i class="fas fa-pencil-alt"></i> <?php countPosts();?></h3>
                     <button class="btn btn-outline-light font-weight-bold text-uppercase">view</button>
                 </div>
                 
                 <div class="container bg-success rounded text-center text-white p-3 mt-4">
                     <h3>Category</h3>
-                    <h2><i class="far fa-folder-open"></i> 4</h2>
+                    <h2><i class="far fa-folder-open"></i> <?php countCategories();?></h2>
                     <button class="btn btn-outline-light font-weight-bold text-uppercase">view</button>
                 </div>
                 <div class="container bg-warning rounded text-center text-white p-3 mt-4">
                     <h3>Users</h3>
-                    <h2><i class="fas fa-users"></i> 6</h2>
+                    <h2><i class="fas fa-users"></i> <?php countUsers();?></h2>
                     <button class="btn btn-outline-light font-weight-bold text-uppercase">view</button>
                 </div>
             </div>
