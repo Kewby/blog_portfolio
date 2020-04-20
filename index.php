@@ -1,11 +1,9 @@
-//HELLO FROM THE ECOMMERCE BRANCH!!
 <?php
     include 'functions/userFunctions.php';
 ?>
-//MasterBranch
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- test 456 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
